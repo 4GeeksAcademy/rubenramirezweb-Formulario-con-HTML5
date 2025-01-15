@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="styles.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+   <title>Mi Formulario con HTML5</title>
+</head>
+
+<body>
+
+   <div class="principal">
+      <div class="header"> <!-- Título del Header -->
+         <h2>Payment form example</h2>
+      </div>
+      <div class="warning"> <!-- Mensaje Warning -->
+         <p><strong>Some fields are missing</strong></p>
+      </div>
+      <div class="formulario-card"> <!-- Formulario para pedir datos de la tarjeta -->
+         <div class="card">
+            <p><strong>Card #</strong></p>
+            <input class="input-card" type="text" name="card" placeholder="XXXXXXXXXX" required="required" />
+         </div>
+         <div class="cvc">
+            <p><strong>CVC #</strong></p>
+            <input class="input-cvc" type="text" name="cvc" placeholder="000" required="required" />
+         </div>
+         <div class="amount">
+            <p><strong>Amount</strong></p>
+            <p><strong>$</strong><input class="input-amount" type="text" name="amount" placeholder="Amount"
+                  required="required" /></p>
+         </div>
+      </div>
+      <div class="formulario"> <!-- Formulario para pedir datos-->
+         <div class="col-izquierda"> <!-- Columna Izquierda -->
+            <div class="first-name">
+               <p>First Name:</p>
+               <input class="input-card" type="text" name="first-name" required="required" />
+            </div>
+            <div class="city">
+               <p>City:</p>
+               <input class="input-card" type="text" name="city" required="required" />
+            </div>
+            <div class="tarjetas">
+               <p>We Accept:</p>
+               <input type="radio" id="mastercard" name="cards" value="mastercard" />
+               <label for="mastercard">Mastercard</label>
+               <input type="radio" id="visa" name="cards" value="visa" />
+               <label for="visa">Visa</label>
+               <input type="radio" id="american" name="cards" value="american" />
+               <label for="american">American Express</label>
+            </div>
+         </div>
+
+         <div class="col-derecha"> <!-- Columna Derecha-->
+            <div class="last-name">
+               <p>Last Name</p>
+               <input class="input-card" type="text" name="last-name" required="required" />
+            </div>
+            <div class="direction">
+               <div class="estado">
+                  <p>State</p>
+                  <input class="input-card" type="text" name="last-name" required="required" />
+               </div>
+               <div class="postal">
+                  <p>Postal Code</p>
+                  <input class="input-card" type="text" name="last-name" required="required" />
+               </div>
+            </div>
+            <div class="message">
+               <p><label for="Message">Message</label></p>
+               <textarea id="Message" name="message" rows="4" cols="50"></textarea>
+            </div>
+         </div>
+      </div>
+
+      <div class="footer"> <!-- Botones de Footer -->
+         <button class="cancel">Cancel</button>
+         <button class="send">Send</button>
+      </div>
+   </div>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.principal {
+    width: 70%;
+    border: solid 0.1rem #e5e4e5;
+    border-radius: 5px;
+    margin: 50px 50px;
+}
+
+.header {
+    background: #f8f5f7;
+    border: solid 0.1rem #f8f5f7;
+    border-bottom-color: #d8d8db;
+    text-align: left;
+    padding: 12px 20px;
+}
+
+.warning {
+    background: #f4d3db;
+    border-radius: 5px;
+    text-align: left;
+    padding: 15px 20px;
+    margin: 15px;
+    color: #854b58
+}
+
+.formulario-card {
+    display: flex;
+    align-content: flex-start;
+    gap: 10px;
+    padding: 20px;
+}
+
+.input-card {
+    width: 400px;
+    height: 30px;
+    border: solid 0.1rem #e5e4e5;
+    border-radius: 5px;
+    margin: 10px 0px;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+.input-cvc {
+    width: 280px;
+    height: 30px;
+    border: solid 0.1rem #e5e4e5;
+    border-radius: 5px;
+    margin: 10px 0px;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+.input-amount {
+    width: 400px;
+    height: 30px;
+    border: solid 0.1rem #e5e4e5;
+    border-radius: 5px;
+    margin: 10px 0px;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+.formulario {
+    display: flex;
+    padding: 20px;
+    gap: 25px;
+
+}
+
+.tarjetas input {
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.direction {
+    display: flex;
+    
+}
+
+.footer {
+    background: #f8f5f7;
+    border: solid 0.1rem #f8f5f7;
+    border-top-color: #d8d8db;
+    /* border-color: #f8f5f7; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 12px 20px;
+}
+
+.cancel {
+    background-color: #6b747d;
+    border-style: solid;
+    border-color: #676f76;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 16px;
+    color: white;
+}
+
+.send {
+    background-color: #0a7ef5;
+    border-style: solid;
+    border-color: #0a7df8;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 16px;
+    color: white;
+}
+
+
+.medio {
+    background-color: aqua;
+    text-align: center;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+}
