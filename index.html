@@ -6,18 +6,22 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="styles.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
    <title>Mi Formulario con HTML5</title>
 </head>
 
 <body>
 
-   <div class="principal">
+   <div class="contenedor">
+
       <div class="header"> <!-- Título del Header -->
          <h2>Payment form example</h2>
       </div>
+
       <div class="warning"> <!-- Mensaje Warning -->
          <p><strong>Some fields are missing</strong></p>
       </div>
+
       <div class="formulario-card"> <!-- Formulario para pedir datos de la tarjeta -->
          <div class="card">
             <p><strong>Card #</strong></p>
@@ -33,55 +37,67 @@
                   required="required" /></p>
          </div>
       </div>
+
       <div class="formulario"> <!-- Formulario para pedir datos-->
          <div class="col-izquierda"> <!-- Columna Izquierda -->
             <div class="first-name">
                <p>First Name:</p>
-               <input class="input-card" type="text" name="first-name" required="required" />
+               <input class="input-name-city" type="text" name="first-name" required="required" />
             </div>
             <div class="city">
                <p>City:</p>
-               <input class="input-card" type="text" name="city" required="required" />
+               <input class="input-name-city" type="text" name="city" required="required" />
             </div>
             <div class="tarjetas">
                <p>We Accept:</p>
-               <input type="radio" id="mastercard" name="cards" value="mastercard" />
-               <label for="mastercard">Mastercard</label>
-               <input type="radio" id="visa" name="cards" value="visa" />
-               <label for="visa">Visa</label>
-               <input type="radio" id="american" name="cards" value="american" />
-               <label for="american">American Express</label>
+               <div class="img-tarjetas">
+                  <input type="radio" id="mastercard" name="cards" value="mastercard" />
+                  <i class="fa-brands fa-cc-mastercard"></i>
+                  <input type="radio" id="visa" name="cards" value="visa" />
+                  <i class="fa-brands fa-cc-visa"></i>
+                  <input type="radio" id="american" name="cards" value="american" />
+                  <i class="fa-brands fa-cc-diners-club"></i>
+                  <input type="radio" id="paypal" name="cards" value="paypal" />
+                  <i class="fa-brands fa-cc-paypal"></i>
+               </div>
             </div>
          </div>
 
          <div class="col-derecha"> <!-- Columna Derecha-->
             <div class="last-name">
                <p>Last Name</p>
-               <input class="input-card" type="text" name="last-name" required="required" />
+               <input class="input-last-name" type="text" name="last-name" required="required" />
             </div>
+
             <div class="direction">
-               <div class="estado">
-                  <p>State</p>
-                  <input class="input-card" type="text" name="last-name" required="required" />
+
+               <div class="estado-postal">
+                  <div class="estado">
+                     <p>State</p>
+                     <input class="input-estado" type="text" name="last-name" required="required" />
+                  </div>
+                  <div class="postal">
+                     <p>Postal Code</p>
+                     <input class="input-estado" type="text" name="last-name" required="required" />
+                  </div>
                </div>
-               <div class="postal">
-                  <p>Postal Code</p>
-                  <input class="input-card" type="text" name="last-name" required="required" />
-               </div>
+
             </div>
             <div class="message">
                <p><label for="Message">Message</label></p>
-               <textarea id="Message" name="message" rows="4" cols="50"></textarea>
+               <textarea class="mensaje" id="Message" name="message" rows="4" cols="50"></textarea>
             </div>
          </div>
       </div>
 
       <div class="footer"> <!-- Botones de Footer -->
-         <button class="cancel">Cancel</button>
-         <button class="send">Send</button>
+         <a class="cancel" href="#" role="button">Cancel</a>
+         <a class="send" href="#" role="button">Send</a>
       </div>
+
    </div>
 
+   <script src="https://kit.fontawesome.com/f2beac05d4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
